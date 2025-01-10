@@ -74,6 +74,29 @@ input, select, textarea {
 
 /* Basic */
 
+.fullscreen-box {
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.fullscreen-box h1, .fullscreen-box h3 {
+    color: #fff; /* Ensure header text is visible */
+    text-align: center;
+}
+
+.fullscreen-box .button.large {
+    margin-top: 20px;
+}
+
+
 	html {
 		box-sizing: border-box;
 	}
