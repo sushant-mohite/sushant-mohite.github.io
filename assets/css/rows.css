@@ -196,7 +196,7 @@
 }
 
     .row > * {
-        padding: 25px 0 0 25px;
+        padding: 25px 25px 30px 25px;
     }
 
     .row.gtr-uniform {
@@ -439,7 +439,7 @@
     }
 
         .row > * {
-            padding: 25px 0 0 25px;
+            padding: 25px 25px 30px 25px;
         }
 
         .row.gtr-uniform {
@@ -683,7 +683,7 @@
     }
 
         .row > * {
-            padding: 25px 0 0 25px;
+            padding: 25px 25px 30px 25px;
         }
 
         .row.gtr-uniform {
@@ -927,7 +927,7 @@
     }
 
         .row > * {
-            padding: 25px 0 0 25px;
+            padding: 25px 25px 30px 25px;
         }
 
         .row.gtr-uniform {
@@ -1171,7 +1171,7 @@
     }
 
         .row > * {
-            padding: 15px 0 0 15px;
+            padding: 0 0 40px 15px;
         }
 
         .row.gtr-uniform {
