@@ -231,9 +231,18 @@ input, select, textarea {
 		margin: 1em 0 2em 0;
 	}
 
-	p, ul, ol, dl, table {
-		margin-bottom: 2.5em;
-	}
+/* Default margin for larger screens (PC) */
+p, ul, ol, dl, table {
+    margin-bottom: 1.2em; /* PC margin */
+}
+
+/* Adjust margin for mobile screens */
+@media (max-width: 768px) { /* Change 768px to your desired mobile breakpoint */
+    p, ul, ol, dl, table {
+        margin-bottom: 2.5em; /* Mobile margin */
+    }
+}
+
 
 	header {
 		margin: 0 0 2em 0;
