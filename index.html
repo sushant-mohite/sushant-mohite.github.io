@@ -6,42 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/rows.css" />
-		
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-    const videos = document.querySelectorAll("video");
-    const maxVisibleVideos = 2; // Limit to 2 videos playing at a time
-    let currentlyPlaying = 0;
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Play the video if it's in view and not exceeding the limit
-                if (currentlyPlaying < maxVisibleVideos) {
-                    entry.target.play();
-                    currentlyPlaying++;
-                    entry.target.setAttribute("preload", "auto"); // Allow preload
-                }
-            } else {
-                // Pause the video if it's out of view
-                entry.target.pause();
-                entry.target.currentTime = 0; // Reset the video
-                if (entry.target.paused === false) {
-                    currentlyPlaying--;
-                }
-                entry.target.setAttribute("preload", "none"); // Disable preload for off-screen videos
-            }
-        });
-    });
-
-    videos.forEach(video => {
-        // Set initial preload to none for all videos
-        video.setAttribute("preload", "none");
-        observer.observe(video);
-    });
-});
-
-		</script>
 	</head>
 	
 	<body class="is-preload">
