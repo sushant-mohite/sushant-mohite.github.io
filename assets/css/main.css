@@ -73,7 +73,7 @@ input, select, textarea {
 }
 
 .responsive-video {
-    width: 98%; /* Make the video width fill the container */
+    width: 100%; /* Make the video width fill the container */
     height: auto; /* Maintain the aspect ratio */
     object-fit: cover; /* Ensure the video covers the container */
 }
@@ -1215,9 +1215,9 @@ button,
 
 				.box .image.featured {
 					position: relative;
-					left: 20px;
 					top: 20px;
-					margin: -50px 0 50px -40px;
+					left: 20px;
+					margin: -50px 10px 50px -30px;
 					width: auto;
 				}
 
