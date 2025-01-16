@@ -258,8 +258,7 @@ p, ul, ol, dl, table {
 
 /* Adjust margin for mobile screens */
 @media (max-width: 768px) { /* Change 768px to your desired mobile breakpoint */
-    @media (max-width: 768px) {
-		p {
+    p {
 			margin-bottom: 2.5em;
 		}
 	
