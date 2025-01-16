@@ -238,10 +238,28 @@ p, ul, ol, dl, table {
 
 /* Adjust margin for mobile screens */
 @media (max-width: 768px) { /* Change 768px to your desired mobile breakpoint */
-    p, ul, ol, dl, table {
-        margin-bottom: 2.5em; /* Mobile margin */
-    }
-}
+    @media (max-width: 768px) {
+		p {
+			margin-bottom: 2.5em;
+		}
+	
+		ul {
+			margin-bottom: 0em;
+		}
+	
+		ol {
+			margin-bottom: 1.5em;
+		}
+	
+		dl {
+			margin-bottom: 1.5em;
+		}
+	
+		table {
+			margin-bottom: 1.5em;
+		}
+	}
+	
 
 
 	header {
@@ -1280,7 +1298,7 @@ button,
 		/* Articles */
 
 			#top {
-				padding: 3em 0;
+				padding: 3em 0 0 0;
 			}
 
 				#top .image {
