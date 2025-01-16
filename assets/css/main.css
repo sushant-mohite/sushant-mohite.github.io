@@ -901,8 +901,8 @@ button,
 	width: 100%;
 	z-index: 10000;
 	cursor: default;
-	height: 3.5em;
-	line-height: 3.5em;
+	height: 4em;
+	line-height: 4em;
 }
 
 		#nav ul {
@@ -952,7 +952,7 @@ button,
 					margin-left: -0.75em;
 					border-left: solid 0.75em transparent;
 					border-right: solid 0.75em transparent;
-					border-top: solid 0.6em #282828;
+					border-top: solid 0.6em #ffffff;
 				}
 
 /* Articles */
@@ -1246,7 +1246,7 @@ button,
 		/* Nav */
 
 			#nav {
-				height: 50px;
+				height: 54px;
 				line-height: 50px;
 			}
 
