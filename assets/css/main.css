@@ -114,7 +114,7 @@ input, select, textarea {
 	}
 
 	body {
-		padding-top: 3.5em;
+		padding-top: 2em;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1101,11 +1101,11 @@ button,
 		/* Basic */
 
 			body {
-				padding-top: 44px;
+				padding-top: 0px;
 			}
 
 			body, input, textarea, select {
-				line-height: 1.75em;
+				line-height: 2em;
 				font-size: 10pt;
 				letter-spacing: 0;
 			}
