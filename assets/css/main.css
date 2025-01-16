@@ -1130,26 +1130,25 @@ button,
 			}
 
 			@media screen and (max-width: 736px) {
-				h1, h2, h3, h4 {
-					font-size: calc(1.5em + (2em - 1.5em) * ((100vw - 320px) / 416));
-					line-height: 1.25em;
-				}
-			
 				/* Adjust each heading size individually if needed */
 				h1 {
 					font-size: 2.5em; /* Specific override for h1 */
+					line-height: 1.25em;
 				}
 			
 				h2 {
-					font-size: 2.5em;
+					font-size: 2em;
+					line-height: 1.25em;
 				}
 			
 				h3 {
 					font-size: 1.75em;
+					line-height: 1.25em;
 				}
 			
 				h4 {
 					font-size: 1.5em;
+					line-height: 1.25em;
 				}
 			}
 
