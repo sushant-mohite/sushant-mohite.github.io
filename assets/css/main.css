@@ -778,6 +778,7 @@ button,
 
 			.box.style1 p {
 				text-align: justify;
+				line-height: 1.75;
 			}
 
 			.box.style1 h3 {
