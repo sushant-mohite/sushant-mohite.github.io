@@ -180,7 +180,27 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1 {
+		color: #e63946;
+		margin: 0 0 1.5em 0;
+	}
+
+	h2 {
+		color: #e63946;
+		margin: 0 0 1.2em 0;
+	}
+
+	h3 {
+		color: #e63946;
+		margin: 0 0 1.2em 0;
+	}
+
+	h4 {
+		color: #e63946;
+		margin: 0 0 1.2em 0;
+	}
+
+	h5, h6 {
 		color: #e63946;
 		margin: 0 0 1.2em 0;
 	}
