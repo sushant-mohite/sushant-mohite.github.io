@@ -685,12 +685,6 @@ button,
 	text-align:center
 }
 
-	ul.social {
-		cursor: default;
-		margin: 0;
-		list-style: none;
-		padding-left: 0;
-	}
 
 		ul.social li {
 			position: relative;
@@ -1127,7 +1121,7 @@ button,
 			}
 
 			header {
-				margin: 0 0 4em 0;
+				margin: 0 0 2em 0;
 			}
 
 				header > p {
