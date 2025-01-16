@@ -661,7 +661,7 @@ button,
 
 	ul {
 		list-style: disc;
-		padding-left: 1em;
+		padding-left: 0em;
 	}
 
 		ul li {
