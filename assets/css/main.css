@@ -816,6 +816,7 @@ button,
 			.box.style1 p {
 				text-align: center;
 				line-height: 1.75;
+				font-size: 1.0em;
 			}
 
 			.box.style1 h3 {
