@@ -7,6 +7,21 @@
     align-items: stretch;
 }
 
+.row1.aln-center1 {
+    justify-content: center;
+}
+
+.row1 {
+    margin-top: -25px;
+    margin-left: -25px;
+}
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
     .row > * {
         box-sizing: border-box;
     }

@@ -181,18 +181,18 @@ input, select, textarea {
 	}
 
 	h1 {
-		color: #e63946;
+		color: #a3232d;
 		margin: 0 0 1.5em 0;
 	}
 
 	h2 {
-		color: #e63946;
+		color: #c084fc;
 		margin: 0 0 1.2em 0;
 	}
 
 	h3 {
-		color: #b82bff;
-		margin: 0 0 1.2em 0;
+		color: #c084fc; 
+		margin: 0 0 1em 0;
 	}
 
 	h4 {
@@ -202,7 +202,7 @@ input, select, textarea {
 
 	h5, h6 {
 		color: #e63946;
-		margin: 0 0 1.2em 0;
+		margin: 0 0 1em 0;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -291,7 +291,7 @@ p, ul, ol, dl, table {
 		}
 
 	footer {
-		margin: 1em 0 0 0;
+		margin: 0em 0 0 0;
 	}
 
 		footer > p {
@@ -306,11 +306,17 @@ p, ul, ol, dl, table {
 		width: 1200px;
 	}
 
+	.projectcontainer {
+		margin: 0 auto;
+		max-width: calc(100% - 50px);
+		width: 1200px;
+	}
+
 		.container.medium {
 			width: 900px;
 		}
 
-		@ screen and (max-width: 1680px) {
+		@media screen and (max-width: 1680px) {
 
 			.container {
 				width: 1200px;
@@ -664,7 +670,7 @@ button,
 .button {
 	background-color: transparent;
 	box-shadow: inset 0 0 0 2px #f1faee;
-	color: #f1faee !important;
+	color: #ffffff !important;
 }
 
 	input[type="submit"]:hover,
@@ -805,7 +811,7 @@ button,
 .box.style1 {
     padding: 1.5em 2em 0 2em;
     height: 100%;
-    border: 2px solid rgba(255, 255, 255, 0.966); /* Optional: Add borders */
+    border: 2px solid rgb(255, 255, 255); /* Optional: Add borders */
     border-radius: 10px; /* Optional: Add rounded corners */
     margin-bottom: 2em; /* Creates space below each project */
     box-sizing: border-box; /* Ensures padding and border fit within the element */
@@ -890,6 +896,17 @@ button,
 	padding: 3.5em 0 2em 0;
 	text-align: center;
 }
+
+.contactcontainer {
+	box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+	padding:3.5em 0 2em 0;
+	text-align: center;
+}   
+    
+    .contactcontainer.project {
+		background-image: none;
+		background-color: #181818;
+	}    
 
 	.wrapper.style1 {
 		background-image: none;
