@@ -811,7 +811,7 @@ button,
 .box.style1 {
     padding: 1.5em 2em 0 2em;
     height: 100%;
-    border: 2px solid rgb(0 95 133); /* Optional: Add borders */
+    border: 2px solid rgb(0 78 109); /* Optional: Add borders */
     border-radius: 25px; /* Optional: Add rounded corners */
     margin-bottom: 2em; /* Creates space below each project */
     box-sizing: border-box; /* Ensures padding and border fit within the element */
