@@ -186,12 +186,12 @@ input, select, textarea {
 	}
 
 	h2 {
-		color: #e63946;
+		color: #008ac1;
 		margin: 0 0 1.2em 0;
 	}
 
 	h3 {
-		color: #d6b0fb; 
+		color: #008ac1; 
 		margin: 0 0 1em 0;
 	}
 
@@ -811,8 +811,8 @@ button,
 .box.style1 {
     padding: 1.5em 2em 0 2em;
     height: 100%;
-    border: 2px solid rgb(255, 255, 255); /* Optional: Add borders */
-    border-radius: 10px; /* Optional: Add rounded corners */
+    border: 2px solid rgb(0 95 133); /* Optional: Add borders */
+    border-radius: 25px; /* Optional: Add rounded corners */
     margin-bottom: 2em; /* Creates space below each project */
     box-sizing: border-box; /* Ensures padding and border fit within the element */
 }
