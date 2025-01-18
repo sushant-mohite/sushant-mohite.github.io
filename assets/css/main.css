@@ -309,7 +309,8 @@ p, ul, ol, dl, table {
 	.projectcontainer {
 		margin: 0 auto;
 		max-width: calc(100% - 50px);
-		width: 1200px;
+		width: 1600px;
+		height: 1300px;
 	}
 
 		.container.medium {
@@ -897,6 +898,13 @@ button,
 	text-align: center;
 }
 
+.projectpage {
+	background-image: url(images/bg.png);
+	box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+	padding: 8em 0 2em 0;
+	text-align: center;
+}
+
 .contactcontainer {
 	box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 	padding:3.5em 0 2em 0;
@@ -914,6 +922,10 @@ button,
 	}
 
 	.wrapper.style2 {
+		background-color: #0D1929;
+	}
+
+	.projectpage.style2 {
 		background-color: #0D1929;
 	}
 

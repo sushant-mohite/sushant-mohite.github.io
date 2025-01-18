@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  
+  .main-container {
+    margin: auto;
+    width: 100%;
+    max-width: 1600px;
+    border: 2px solid #000;
+    padding: 20px;
+    background-color: #000000;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  }
+  
+  .left-container {
+    background-color: #000;
+    width: 48%;
+    border: 2px solid #000;
+    padding: 10px;
+    height: 1000px;
+  }
+
+  .right-container {
+    background-color: #000;
+    width: 48%;
+    border: 2px solid #000;
+    padding: 10px;
+    height: 1000px;
+  }
+  
+  .section-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 10px 15px 10px;
+  }
+  
+  .text-box {
+    border: 1px solid #000;
+    padding: 5px 120px 15px 120px;
+    margin-bottom: 85px;
+    text-align: left;
+
+  }
+  
+  .sub-section-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0 30px 0;
+  }
+  
+  .video-box {
+    width: 90%;
+    height: auto;
+    border: 1px solid #000;
+    background-color: #ddd;
+    margin: 15px auto;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 0 auto; 
+    margin-left: 20px;         /* Centers the grid horizontally */
+    max-width: 800px;       /* Optional: Set a max-width for the grid */
+}
+
+  
+  .image-box {
+    width: 95%;
+    height: 180px;
+    border: 1px solid #000;
+    background-color: #ddd;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+.centered-button {
+    display: inline-flex;        /* Use flexbox for centering */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+    padding: 10px 20px;        /* Adjust padding for button size */
+    border: none;               /* Remove default border */
+    border-radius: 5px;        /* Optional: round corners */
+    background-color: #007bff; /* Button background color */
+    color: white;               /* Text color */
+    cursor: pointer;            /* Change cursor to pointer on hover */
+    font-size: 16px;            /* Font size */
+    text-align: center;         /* Center text */
+    margin: 0 15px;
+}
+
+.centered-button:hover {
+    background-color: #0056b3; /* Optional: darker background on hover */
+}
+
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column; /* Stacks containers vertically */
+    }
+  
+    .left-container, .right-container {
+      width: 100%; /* Full-width for mobile */
+      margin-bottom: 20px; /* Spacing between sections */
+    }
+  
+    .image-grid {
+      grid-template-columns: 1fr; /* Single column for images */
+    }
+  
+    button {
+      width: 100%; /* Full-width buttons */
+      max-width: 300px; /* Optional: Set a max width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.5em; /* Slightly smaller title for very small screens */
+    }
+  
+    .text-box {
+      height: auto; /* Adjust height to fit content dynamically */
+    }
+  
+    .video-box {
+      height: 120px; /* Reduce height for smaller screens */
+    }
+  
+    .image-box {
+      height: 60px; /* Reduce image box size */
+    }
+  }
+  

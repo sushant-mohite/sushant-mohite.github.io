@@ -1,107 +1,157 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Sushant Mohite | Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/rows.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario Run</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        <!-- Nav -->
-        <nav id="nav">
-            <ul class="container">
-                <li><a href="index.html#top">Home</a></li>
-                <li><a class="active" href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
+.main-container {
+  width: 80%;
+  max-width: 1200px;
+  border: 2px solid #000;
+  padding: 20px;
+  background-color: #fff;
+}
 
-		<!-- Projects -->
-		<article id="portfolio" class="wrapper style2">
-			<div class="container">
-				<header>
-					<h1>Mario Run</h1>
-					<!-- <p>Apps, games and simulators that I developed or worked on.</p> -->
-				</header>
-				<div class="row aln-center">
-					<!-- Mario Run -->
-					<div class="col-4 col-6 col-12-small">
-						<section class="box style1 justkrated">
-							<h3><span style="color: #ffffff"></span>Programming Feat/h3>
-							<p>Private initiative with the goal to create apps and games for mobile platform. Working at JustKrated allowed me to have a better understanding in all stages of game development, from design to coding, as well as aspects of testing, marketing and project management.</p>
-							<br>
-							<a href="mariorun.html" class="image featured"><img src="images/justkrated_banner.png" alt="JustKrated games" /></a>
-							<br>
-							<a href="mariorun.html" class="button large scrolly">View details</a>
-						</section>
-					</div>
-					
-					<!-- Rocket Boost -->
-					<div class="col-4 col-6 col-12-small">
-						<section class="box style1 s2p_edu">
-							<h3>Rocket Boost</h3>
-							<p>As a member of the development team, I was responsible for developing simulators aimed at learning and training, creating tools and applying improvements for the development process, as well as collaborating with the design team to ensure that the simulators were made as close to the documentation as possible with the highest level of quality.</p>							
-							<br>
-							<a href="portfolio-s2p.html" class="image featured"><img src="images/s2p_banner.jpg" alt="S2P Edu simulators" /></a>
-							<br>
-							<a href="portfolio-s2p.html" class="button large scrolly">View Details</a>
-						</section>
-					</div>
+.title {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-				</div>
-			</div>
-		</article>
-<!-- Portfolio -->
-<article id="portfolio" class="wrapper style2">
-    <div class="Container">
-        <header>
-            <h1>Mario Run</h1>
-        </header>
-        <section class="box style1 justkrated">
-            <h3><span style="color: #ffffff"></span>Mario Run</h3>
-            <p>Private initiative with the goal to create apps and games for mobile platform. Working at JustKrated allowed me to have a better understanding in all stages of game development, from design to coding, as well as aspects of testing, marketing, and project management.</p>
-            <br>
-            <a href="portfolio-justkrated.html" class="image featured">
-                <img src="images/justkrated_banner.png" alt="JustKrated games" />
-            </a>
-            <br>
-        </section>
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.left-container, .right-container {
+  width: 48%;
+  border: 2px solid #000;
+  padding: 10px;
+}
+
+.section-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text-box {
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 100px;
+  overflow: auto;
+}
+
+.sub-section-title {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.video-box {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #000;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.image-box {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #000;
+  background-color: #ddd;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <!-- Title Section -->
+    <div class="title">Mario Run</div>
+    
+    <!-- Content Section -->
+    <div class="content-container">
+      <!-- Left Section -->
+      <div class="left-container">
+        <div class="section-title">Overview</div>
+        <div class="text-box">
+          My Name is anthony gonsalves me duniya me akela hu ghar bhi hai khali dil bhi hai khali koi hai jo banegi meri kismatwali jo bhi jaha ho jab chahe chali aaye
+        </div>
+        <div class="sub-section-title">Programming Features</div>
+        <div class="text-box">
+          My name is Anthony Gonsalves Main Duniya Mein Akela hun Garmi hai khali dil bhi hai khali koi hai jo Banegi Meri Kismat wali jo bhi ho Jahan Bhi Ho Jab Chahe Chali
+        </div>
+      </div>
+      
+      <!-- Right Section -->
+      <div class="right-container">
+        <div class="section-title">Gameplay Footage</div>
+        <div class="video-box"></div>
+        <div class="sub-section-title">Game Images</div>
+        <div class="image-grid">
+          <div class="image-box"></div>
+          <div class="image-box"></div>
+          <div class="image-box"></div>
+          <div class="image-box"></div>
+        </div>
+      </div>
     </div>
-</article>
-
-
-
-		<!-- Contact -->
-		<article id="contact" class="wrapper style1">
-					<div class="col-12">
-						<h3>Connect with me</h3>
-						<ul class="social">
-							<li><a href="https://www.linkedin.com/in/sushantmohite/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://sushantgames.itch.io" class="icon brands fa-itch-io"><span class="label">Itch.io</span></a></li>
-							<li><a href="https://github.com/fbarreira" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						</ul>
-						<hr />
-						<a href="https://drive.google.com/file/d/1OaTQAInA01pIJ5WjGDDO6dehO98LHNWC/view?usp=sharing" class="button large scrolly">Download Resume</a>
-					</div>
-				</div>
-				<footer>
-					<hr />
-					<ul id="copyright">
-						<li>&copy; 2025. All rights reserved.</li>
-					</ul>
-		</article>
-
-		
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+    
+    <!-- Buttons Section -->
+    <div class="button-container">
+      <button>Itch.io</button>
+      <button>Github</button>
+    </div>
+  </div>
+</body>
 </html>
