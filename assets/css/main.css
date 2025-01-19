@@ -155,7 +155,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
+		color: #009767;
 	}
 
 	i, em {
@@ -313,6 +313,24 @@ p, ul, ol, dl, table {
 		width: 1600px;
 		height: 1300px;
 	}
+	
+	/* Media Queries for Responsive Design */
+	@media (max-width: 768px) { /* Tablet */
+		.projectcontainer {
+			width: calc(100% - 30px); /* Reduce width for tablets */
+			height: auto; /* Adjust height for flexibility */
+			padding: 20px; /* Optional: add padding for better spacing */
+		}
+	}
+	
+	@media (max-width: 480px) { /* Mobile */
+		.projectcontainer {
+			width: calc(100% - 20px); /* Further reduce width for mobile */
+			height: auto; /* Adjust height for flexibility */
+			padding: 15px; /* Optional: add padding for better spacing */
+		}
+	}
+	
 
 		.container.medium {
 			width: 900px;
@@ -711,6 +729,7 @@ button,
 
 		ul li {
 			padding-left: 0.5em;
+			margin-bottom: 0.5em;
 		}
 
 	ol {
