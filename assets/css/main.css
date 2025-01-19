@@ -191,8 +191,9 @@ input, select, textarea {
 	}
 
 	h3 {
-		color: #008ac1; 
+		color: #00a6e9; 
 		margin: 0 0 1em 0;
+		text-shadow: 1px 1px 2px black; ;
 	}
 
 	h4 {
@@ -899,11 +900,38 @@ button,
 }
 
 .projectpage {
-	background-image: url(images/bg.png);
-	box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-	padding: 8em 0 2em 0;
-	text-align: center;
+    /* background-image: url(images/bg.png); */
+    background-size: cover; /* Ensure the background covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent tiling of the background */
+    box-shadow: 
+        inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), 
+        inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    padding: 6em 0 2em 0; /* Default padding for larger screens */
+    text-align: center;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .projectpage {
+        padding: 6em 0 2em 0; /* Reduce top padding for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .projectpage {
+        padding: 4em 0 1.5em 0; /* Further reduce padding for mobile */
+        text-align: center; /* Ensure text stays centered */
+    }
+}
+
+@media (max-width: 480px) {
+    .projectpage {
+        padding: 6em 0 1em 0; /* Compact padding for smaller screens */
+        background-size: contain; /* Adjust background to fit smaller screens */
+    }
+}
+
 
 .contactcontainer {
 	box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
