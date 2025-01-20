@@ -424,11 +424,42 @@
     margin-bottom: 0.5em;
   }
 
+}
+
   @media (max-width: 480px) {
     ul li {
       padding-left: 0em;
       margin-bottom: 0.5em;
   }
   }
+
+  p1 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+  }
+
+  .gamedesign {
+    background-color: #c33131;
+    content: "Game Design";
 }
+
+  .label {
+      border-radius: 4px;
+      font-family: Helvetica;
+      font-size: 0.9em;
+      text-align: center;
+      color: #fff;
+      padding: 5px;
+      line-height: normal;
+      padding-left: 6px;
+      padding-right: 6px;
+      display: inline-block;
+      margin-bottom: 0.3em;
+      margin-right: 0.3em;
+  }
+
   
