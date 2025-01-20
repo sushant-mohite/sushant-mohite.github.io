@@ -637,7 +637,7 @@ letter-spacing: 0px;
       gap: 45px 45px; /* Spacing between items */
       max-width: 635px; /* Optional: Limit grid width */
       margin: 0 auto; /* Center the grid */
-      padding: 30px; /* Add padding around the grid */
+      padding: 20px; /* Add padding around the grid */
   }
   }
 
