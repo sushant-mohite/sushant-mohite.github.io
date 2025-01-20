@@ -313,7 +313,7 @@
 /* For tablets (screens up to 768px) */
 @media (max-width: 768px) {
   .text-box {
-      padding: 0px 30px 15px 40px; /* Reduce horizontal padding for tablets */
+      padding: 0px 25px 15px 25px; /* Reduce horizontal padding for tablets */
       margin-bottom: 30px; /* Adjust margin for smaller screens */
   }
 }
