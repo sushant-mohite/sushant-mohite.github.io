@@ -685,4 +685,36 @@ letter-spacing: 0px;
       margin-right: 0.3em;
   }
 
+
+  /* For small phones */
+@media (max-width: 480px) {
+  /* Styles for small phones */
+}
+
+/* For larger phones */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Styles for larger phones */
+}
+
+/* For tablets (portrait mode) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets in portrait mode */
+}
+
+/* For tablets (landscape mode) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  /* Styles for tablets in landscape mode */
+}
+
+/* For small desktops */
+@media (min-width: 1201px) and (max-width: 1440px) {
+  /* Styles for small desktops */
+}
+
+/* For large desktops */
+@media (min-width: 1441px) {
+  /* Styles for large desktops */
+}
+
+
   
