@@ -42,7 +42,7 @@
   margin: 0 auto;
   max-width: calc(100% - 50px);
   width: 1600px;
-  height: 1300px;
+  height: auto;
 }
 
 /* Media Queries for Responsive Design */
