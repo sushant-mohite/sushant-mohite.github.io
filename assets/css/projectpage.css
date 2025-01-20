@@ -182,8 +182,9 @@
 /* For mobile devices (screens up to 480px) */
 @media (max-width: 480px) {
   .section-title {
-      font-size: 2em; /* Smaller font size for smaller screens */
-      margin: 10px 5px 15px 5px; /* Tighter spacing */
+      font-size: 1.5em; /* Smaller font size for smaller screens */
+      margin: 25px 5px 10px 5px; /* Tighter spacing */
+      letter-spacing: -0.5px;
   }
 }
 
@@ -199,17 +200,22 @@
 /* For tablets (screens up to 768px) */
 @media (max-width: 768px) {
   .text-box {
-      padding: 0px 60px 15px 60px; /* Reduce horizontal padding for tablets */
-      margin-bottom: 30px; /* Adjust margin for smaller screens */
+    border: 1px solid #000; /* Default border */
+    padding: 0px 70px 15px 70px; /* Default padding for desktop */
+    margin-bottom: 90px; /* Default margin */
+    text-align: center; /* Default text alignment */
+    font-size: 1.1em;
   }
 }
 
 /* For mobile devices (screens up to 480px) */
 @media (max-width: 480px) {
   .text-box {
-      padding: 0px 20px 15px 20px; /* Minimal padding for mobile */
-      margin-bottom: 20px; /* Further reduce margin for compact layout */
-      text-align: center; /* Center text for better readability on small screens */
+    border: 1px solid #000; /* Default border */
+    padding: 0px 70px 15px 70px; /* Default padding for desktop */
+    margin-bottom: 90px; /* Default margin */
+    text-align: center; /* Default text alignment */
+    font-size: 1em;
   }
 }
 
@@ -221,6 +227,30 @@
   font-size: 1em;
 }
 
+/* For tablets (screens up to 768px) */
+@media (max-width: 768px) {
+  .text-box1 {
+    border: 1px solid #000; /* Default border */
+    padding: 0px 80px 15px 120px; /* Default padding for desktop */
+    margin-bottom: 2px; /* Default margin */
+    text-align: left; /* Default text alignment */
+    font-size: 1em;
+  }
+}
+
+/* For mobile devices (screens up to 480px) */
+@media (max-width: 480px) {
+  .text-box1 {
+    border: 1px solid #000; /* Default border */
+    padding: 0px 20px 15px 45px; /* Default padding for desktop */
+    margin-bottom: 2px; /* Default margin */
+    text-align: left; /* Default text alignment */
+    font-size: 1em;
+  }
+}
+
+
+
 .responsive-video1 {
   width: 100%; /* Make the video width fill the container */
   height: auto; /* Maintain the aspect ratio */
@@ -231,7 +261,7 @@
 /* For tablets (screens up to 768px) */
 @media (max-width: 768px) {
   .text-box {
-      padding: 0px 60px 15px 60px; /* Reduce horizontal padding for tablets */
+      padding: 0px 30px 15px 40px; /* Reduce horizontal padding for tablets */
       margin-bottom: 30px; /* Adjust margin for smaller screens */
   }
 }
@@ -274,8 +304,9 @@
 /* For mobile devices (screens up to 480px) */
 @media (max-width: 480px) {
     .sub-section-title {
-        font-size: 2em; /* Smaller font size for mobile */
-        margin: 15px 0 20px 0; /* Tighter margins for small screens */
+        font-size: 1.5em; /* Smaller font size for mobile */
+        margin: 15px 0 15px 0; /* Tighter margins for small screens */
+        letter-spacing: -0.5px;
     }
 }
 
@@ -386,4 +417,18 @@
       height: 60px; /* Reduce image box size */
     }
   }
+
+  @media (max-width: 768px) {
+  ul li {
+    padding-left: 0em;
+    margin-bottom: 0.5em;
+  }
+
+  @media (max-width: 480px) {
+    ul li {
+      padding-left: 0em;
+      margin-bottom: 0.5em;
+  }
+  }
+}
   
