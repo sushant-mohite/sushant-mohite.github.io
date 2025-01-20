@@ -10,36 +10,36 @@
 	<link rel="stylesheet" href="assets/css/projectpage.css" />
 
 	<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				const videos = document.querySelectorAll('video');
+		document.addEventListener("DOMContentLoaded", function() {
+			const videos = document.querySelectorAll('video');
 	
-				function loadVideo(video) {
-					const source = video.querySelector('source');
-					if (source.src === "") {
-						source.src = source.getAttribute('data-src'); // Get the data-src attribute
-						video.load(); // Load the video
+			function loadVideo(video) {
+				const source = video.querySelector('source');
+				if (source.src === "") {
+					source.src = source.getAttribute('data-src'); // Get the data-src attribute
+					video.load(); // Load the video
+				}
+			}
+	
+			function checkVideoVisibility() {
+				videos.forEach(video => {
+					const rect = video.getBoundingClientRect();
+					const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+	
+					if (isVisible) {
+						loadVideo(video); // Load the video if it is visible
+					} else {
+						video.pause(); // Pause the video if not visible
 					}
-				}
+				});
+			}
 	
-				function checkVideoVisibility() {
-					videos.forEach(video => {
-						const rect = video.getBoundingClientRect();
-						const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+			window.addEventListener('scroll', checkVideoVisibility);
+			window.addEventListener('resize', checkVideoVisibility);
+			checkVideoVisibility(); // Initial check when the page loads
+		});
+	</script>
 	
-						if (isVisible) {
-							loadVideo(video); // Load the video if it is visible
-							video.play(); // Play the video
-						} else {
-							video.pause(); // Pause the video if not visible
-						}
-					});
-				}
-	
-				window.addEventListener('scroll', checkVideoVisibility);
-				window.addEventListener('resize', checkVideoVisibility);
-				checkVideoVisibility(); // Initial check when the page loads
-			});
-		</script>
 </head>
 
 <body class="is-preload">
