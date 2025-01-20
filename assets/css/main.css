@@ -182,7 +182,7 @@ input, select, textarea {
 
 	h1 {
 		color: #e63946;
-		margin: 0 0 1.5em 0;
+		margin: 0 0 1.2em 0;
 	}
 
 	h2 {
@@ -233,6 +233,11 @@ input, select, textarea {
 	h3 {
 		font-size: 1.5em;
 		letter-spacing: -0.015em;
+	}
+
+	h4 {
+		font-size: 3em;
+		letter-spacing: -0.025em;
 	}
 
 	em, i {
@@ -305,30 +310,6 @@ p, ul, ol, dl, table {
 		margin: 0 auto;
 		max-width: calc(100% - 50px);
 		width: 1200px;
-	}
-
-	.projectcontainer {
-		margin: 0 auto;
-		max-width: calc(100% - 50px);
-		width: 1600px;
-		height: 1300px;
-	}
-	
-	/* Media Queries for Responsive Design */
-	@media (max-width: 768px) { /* Tablet */
-		.projectcontainer {
-			width: calc(100% - 30px); /* Reduce width for tablets */
-			height: auto; /* Adjust height for flexibility */
-			padding: 20px; /* Optional: add padding for better spacing */
-		}
-	}
-	
-	@media (max-width: 480px) { /* Mobile */
-		.projectcontainer {
-			width: calc(100% - 20px); /* Further reduce width for mobile */
-			height: auto; /* Adjust height for flexibility */
-			padding: 15px; /* Optional: add padding for better spacing */
-		}
 	}
 	
 
@@ -1168,7 +1149,7 @@ button,
 		/* Wrappers */
 
 			.wrapper {
-				padding: 4em 0 4em 0;
+				padding: 4em 0 2em 0;
 				text-align: center;
 			}
 
