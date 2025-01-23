@@ -430,6 +430,7 @@
     gap: 65px 45px; /* Spacing between items */
     max-width: 635px; /* Optional: Limit grid width */
     margin: 0 auto; /* Center the grid */
+    margin-bottom: 20px;
     padding: 10px; /* Add padding around the grid */
 }
 

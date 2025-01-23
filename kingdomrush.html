@@ -75,20 +75,14 @@
 						<div class="sub-section-title">Programming Features</div>
 						<div class="text-box1">
 							<ul>
-								<li> <strong>Better Code Architecture:</strong> Designed systems to be more generic and
-									reusable. </li>
-								<li> <strong>System Design:</strong> Developed systems such as the Pickup System,
-									Interaction System, Cooking System, and Cleaning System. </li>
-								<li> <strong>API Integration:</strong> Integrated APIs for achievements and optimized
-									game size for mobile platforms. </li>
-								<li> <strong>Asset Optimization:</strong> Improved asset performance for mobile
-									compatibility. </li>
-								<li> <strong>Input Systems & Porting:</strong> Implemented Unity's Input System and
-									handled system porting for mobile devices. </li>
-								<li> <strong>Code & Scene Optimizations:</strong> Performed various optimizations to
-									improve game performance. </li>
-								<li> <strong>QA & Deployment:</strong> Managed quality assurance and uploaded games for
-									both Android and iOS platforms. </li>
+								<li> <strong>Object Pooling:</strong> Optimized enemy instantiation by reusing destroyed enemy objects to improve performance.</li>
+								<li> <strong>Enemy Pathfinding:</strong> Implemented Breadth-First Search (BFS) for determining the shortest path to the castle. Used Vector3.Lerp() for smooth enemy movement along the path. </li>
+								<li> <strong>Currency System:</strong> Designed a Gold System to manage the player's money for tower placement and penalties when enemies reach the castle.</li>
+								<li> <strong>Enemy Health System:</strong> Added a health mechanism for enemies, reducing health upon tower attacks and destroying enemies when health reaches zero.</li>
+								<li> <strong>Shooting Mechanism:</strong> Towers shoot projectiles at enemies, dealing damage based on the enemy's health.</li>
+								<li> <strong>Event System:</strong> Triggered events for key actions like:
+									1. Enemy reaching the castle (reducing currency). 2. Player placing towers (deducting currency). </li>
+								<li> <strong>Coroutines:</strong> Used coroutines to handle time-based operations, such as tower shooting intervals. </li>
 
 							</ul>
 
