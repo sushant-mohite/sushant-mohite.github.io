@@ -10,9 +10,9 @@
 	<link rel="stylesheet" href="assets/css/projectpage.css" />
 
 	<script>
-		document.addEventListener("DOMContentLoaded", function() {
+		document.addEventListener("DOMContentLoaded", function () {
 			const videos = document.querySelectorAll('video');
-	
+
 			function loadVideo(video) {
 				const source = video.querySelector('source');
 				if (source.src === "") {
@@ -20,12 +20,12 @@
 					video.load(); // Load the video
 				}
 			}
-	
+
 			function checkVideoVisibility() {
 				videos.forEach(video => {
 					const rect = video.getBoundingClientRect();
 					const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
-	
+
 					if (isVisible) {
 						loadVideo(video); // Load the video if it is visible
 					} else {
@@ -33,13 +33,13 @@
 					}
 				});
 			}
-	
+
 			window.addEventListener('scroll', checkVideoVisibility);
 			window.addEventListener('resize', checkVideoVisibility);
 			checkVideoVisibility(); // Initial check when the page loads
 		});
 	</script>
-	
+
 </head>
 
 <body class="is-preload">
@@ -70,17 +70,25 @@
 							<span class="label gamedesign">C Sharp</span>
 						</p1>
 						<div class="text-box">
-							Rocket Boost is a physics-based 2.5D game where players control a rocket by managing its thrust and rotation. The objective is to navigate through challenging obstacles and land on landing pad.
+							Rocket Boost is a physics-based 2.5D game where players control a rocket by managing its
+							thrust and rotation. The objective is to navigate through challenging obstacles and land on
+							landing pad.
 						</div>
 						<div class="sub-section-title">Programming Features</div>
 						<div class="text-box1">
 							<ul>
-								<li> <strong>Input Handling:</strong> Controlled rocket movement using player inputs for thrust and rotation.</li>
-								<li> <strong>Physics & Collision Detection:</strong> Applied force and gravity to create realistic rocket movement and flight dynamics.</li>
-								<li> <strong>Particle System:</strong> Added thrust effects and explosions to enhance visual feedback. </li>
-								<li> <strong>Level Design:</strong> Created challenging levels with varying obstacles and landing pads to test player control.</li>
-								<li> <strong>Scene Management:</strong> Handled transitions between levels and restart scenarios seamlessly.</li>
-								<li> <strong>Skybox & Lighting:</strong> Designed immersive visuals with a custom skybox and optimized lighting. </li>
+								<li> <strong>Input Handling:</strong> Controlled rocket movement using player inputs for
+									thrust and rotation.</li>
+								<li> <strong>Physics & Collision Detection:</strong> Applied force and gravity to create
+									realistic rocket movement and flight dynamics.</li>
+								<li> <strong>Particle System:</strong> Added thrust effects and explosions to enhance
+									visual feedback. </li>
+								<li> <strong>Level Design:</strong> Created challenging levels with varying obstacles
+									and landing pads to test player control.</li>
+								<li> <strong>Scene Management:</strong> Handled transitions between levels and restart
+									scenarios seamlessly.</li>
+								<li> <strong>Skybox & Lighting:</strong> Designed immersive visuals with a custom skybox
+									and optimized lighting. </li>
 							</ul>
 
 						</div>
@@ -90,10 +98,10 @@
 					<div class="right-container">
 						<div class="section-title1">Gameplay Footage</div>
 						<video class="responsive-video1" preload="auto" controls controlslist="nodownload">
-					 <source src="videos/rocketboost.mp4" type="video/mp4">
-					 Your browser does not support the video tag.
-				 </video>
-				 
+							<source src="videos/rocketboost.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+
 						<div class="sub-section-title1">Game Images</div>
 						<div class="image-grid">
 							<div class="image-box"><img src="images/image1.png" alt="Game Image 1"></div>
@@ -127,8 +135,8 @@
 							class="label">LinkedIn</span></a></li>
 				<li><a href="mailto:mohite.sushant76@gmail.com" class="icon solid fa-envelope"><span
 							class="label">Email</span></a></li>
-				<li><a href="https://github.com/sushant-mohite" class="icon brands fa-github"><span
-							class="label">Github</span></a></li>
+				<li><a href="https://drive.google.com/file/d/1OckH2HBqT6wIsdLQ882inHRBif7-ndAm/view?usp=drive_link"
+						class="icon solid fa-address-card"><span class="label">Resume</span></a></li>
 			</ul>
 			<hr />
 			<a href="" class="button large scrolly">Download Resume</a>

@@ -10,9 +10,9 @@
 	<link rel="stylesheet" href="assets/css/projectpage.css" />
 
 	<script>
-		document.addEventListener("DOMContentLoaded", function() {
+		document.addEventListener("DOMContentLoaded", function () {
 			const videos = document.querySelectorAll('video');
-	
+
 			function loadVideo(video) {
 				const source = video.querySelector('source');
 				if (source.src === "") {
@@ -20,12 +20,12 @@
 					video.load(); // Load the video
 				}
 			}
-	
+
 			function checkVideoVisibility() {
 				videos.forEach(video => {
 					const rect = video.getBoundingClientRect();
 					const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
-	
+
 					if (isVisible) {
 						loadVideo(video); // Load the video if it is visible
 					} else {
@@ -33,13 +33,13 @@
 					}
 				});
 			}
-	
+
 			window.addEventListener('scroll', checkVideoVisibility);
 			window.addEventListener('resize', checkVideoVisibility);
 			checkVideoVisibility(); // Initial check when the page loads
 		});
 	</script>
-	
+
 </head>
 
 <body class="is-preload">
@@ -77,12 +77,20 @@
 						<div class="sub-section-title">Programming Features</div>
 						<div class="text-box1">
 							<ul>
-								<li> <strong>Programming Patterns:</strong> Implemented Singleton Pattern, State Machine, OOP Principles, Scene Management for cleaner and more efficient code.</li>
-								<li> <strong>System Design:</strong> Developed systems such as the Health / Life System, Checkpoint System and Player Respawn Mechanism.</li>
-								<li> <strong>Animations:</strong> Implemented smooth Idle, Walk, and Run animations, along with dynamic object animations.</li>
-								<li> <strong>UI Management:</strong> Built an intuitive Start Menu, Player Lifes UI, Game Win Screen and Game Over Screen for a polished user interface.</li>
-								<li> <strong>Physics Collision:</strong> Integrated Rigidbody Physics, Triggers, and Collision Detection for interaction and obstacle behavior.</li>
-								<li> <strong>Performance Optimization:</strong> Used Occlusion Culling to optimize rendering performance, Enabling and Disabling Objects dynamically for memory efficiency, Marked Static GameObjects to reduce memory overhead and improved frame rates.</li>
+								<li> <strong>Programming Patterns:</strong> Implemented Singleton Pattern, State
+									Machine, OOP Principles, Scene Management for cleaner and more efficient code.</li>
+								<li> <strong>System Design:</strong> Developed systems such as the Health / Life System,
+									Checkpoint System and Player Respawn Mechanism.</li>
+								<li> <strong>Animations:</strong> Implemented smooth Idle, Walk, and Run animations,
+									along with dynamic object animations.</li>
+								<li> <strong>UI Management:</strong> Built an intuitive Start Menu, Player Lifes UI,
+									Game Win Screen and Game Over Screen for a polished user interface.</li>
+								<li> <strong>Physics Collision:</strong> Integrated Rigidbody Physics, Triggers, and
+									Collision Detection for interaction and obstacle behavior.</li>
+								<li> <strong>Performance Optimization:</strong> Used Occlusion Culling to optimize
+									rendering performance, Enabling and Disabling Objects dynamically for memory
+									efficiency, Marked Static GameObjects to reduce memory overhead and improved frame
+									rates.</li>
 
 							</ul>
 
@@ -93,10 +101,10 @@
 					<div class="right-container">
 						<div class="section-title1">Gameplay Footage</div>
 						<video class="responsive-video1" preload="auto" controls controlslist="nodownload">
-					 <source src="videos/mariorun.mp4" type="video/mp4">
-					 Your browser does not support the video tag.
-				 </video>
-				 
+							<source src="videos/mariorun.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+
 						<div class="sub-section-title1">Game Images</div>
 						<div class="image-grid">
 							<div class="image-box"><img src="images/mario1.png" alt="Game Image 1"></div>
@@ -130,8 +138,8 @@
 							class="label">LinkedIn</span></a></li>
 				<li><a href="mailto:mohite.sushant76@gmail.com" class="icon solid fa-envelope"><span
 							class="label">Email</span></a></li>
-				<li><a href="https://github.com/sushant-mohite" class="icon brands fa-github"><span
-							class="label">Github</span></a></li>
+				<li><a href="https://drive.google.com/file/d/1OckH2HBqT6wIsdLQ882inHRBif7-ndAm/view?usp=drive_link"
+						class="icon solid fa-address-card"><span class="label">Resume</span></a></li>
 			</ul>
 			<hr />
 			<a href="" class="button large scrolly">Download Resume</a>
