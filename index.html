@@ -1,234 +1,265 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Sushant Mohite | Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/rows.css" />
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				const videos = document.querySelectorAll('video');
-	
-				function loadVideo(video) {
-					const source = video.querySelector('source');
-					if (source.src === "") {
-						source.src = source.getAttribute('data-src'); // Get the data-src attribute
-						video.load(); // Load the video
-					}
-				}
-	
-				function checkVideoVisibility() {
-					videos.forEach(video => {
-						const rect = video.getBoundingClientRect();
-						const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
-	
-						if (isVisible) {
-							loadVideo(video); // Load the video if it is visible
-							video.play(); // Play the video
-						} else {
-							video.pause(); // Pause the video if not visible
-						}
-					});
-				}
-	
-				window.addEventListener('scroll', checkVideoVisibility);
-				window.addEventListener('resize', checkVideoVisibility);
-				checkVideoVisibility(); // Initial check when the page loads
-			});
-		</script>
-	</head>
-	
-	<body class="is-preload">
-        <!-- Nav Bar -->
-		<nav id="nav">
-			<ul class="container">
-				<li><a class="active" href="#top">Home</a></li>
-				<li><a href="#portfolio">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
 
-		<!-- Home -->
-		<article id="top" class="wrapper style1">
-			<div class="container">
-				<div class="row">
-					<!-- Profile -->
-					<div class="col-4 col-5-large col-12-medium">
-						<span class="image fit"><img src="https://media.licdn.com/dms/image/v2/D4D03AQGJqNTd7dswMw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1697176966145?e=1742428800&v=beta&t=idMDszLMxBCvDsgv8hib1FLyLUL1tX0V1p-lgkmF8H0" alt="profile" /></span>
-						<div class="icons">
-							<ul class="social">
-								<li><a href="https://www.linkedin.com/in/sushantmohite/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:mohite.sushant76@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="https://drive.google.com/file/d/1Dag2THvhRjlcnbRfh0nE78KzElj3GKcx/view?usp=drive_link" class="icon solid fa-address-card"><span class="label">Resume</span></a></li>
-							</ul>
-						</div>
-					</div>
-					<!-- Info -->
-					<div class="col-8 col-7-large col-12-medium">
-						<header>
-							<h2>Sushant Mohite</h2>
-						</header>
-						<p>I am a gameplay programmer and a unity developer. Passionate about gaming and programming. My primary focus is on creating immersive and engaging gaming experiences using the Unity Game Engine and the C# programming language. With my skills and dedication, I aim to bring unique and exciting projects to life.</p>
-						<!-- <hr /> -->
-						<p><b><span style="color: #4684ab">Location: </span></b>Mumbai, India</p>
-						<!-- <hr /> -->
-						<!-- <p><b><span style="color: #457b9d">Work: </span></b>Unity Game Developer / Open to Work</p> -->
+<head>
+	<title>Sushant Mohite | Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/rows.css" />
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const videos = document.querySelectorAll('video');
+
+			// Load video posters
+			videos.forEach(video => {
+				const source = video.querySelector('source');
+				source.src = source.getAttribute('data-src'); // Get the data-src attribute
+				video.load(); // Load the poster
+			});
+
+
+			function loadVideo(video) {
+				const source = video.querySelector('source');
+				if (source.src === "") {
+					source.src = source.getAttribute('data-src'); // Get the data-src attribute
+					video.load(); // Load the video
+				}
+			}
+
+			function checkVideoVisibility() {
+				videos.forEach(video => {
+					const rect = video.getBoundingClientRect();
+					const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+					if (isVisible) {
+						loadVideo(video); // Load the video if it is visible
+						video.play(); // Play the video
+					} else {
+						video.pause(); // Pause the video if not visible
+					}
+				});
+			}
+
+
+			window.addEventListener('scroll', checkVideoVisibility);
+			window.addEventListener('resize', checkVideoVisibility);
+			checkVideoVisibility(); // Initial check when the page loads
+		});
+	</script>
+</head>
+
+<body class="is-preload">
+	<!-- Nav Bar -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a class="active" href="#top">Home</a></li>
+			<li><a href="#portfolio">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- Home -->
+	<article id="top" class="wrapper style1">
+		<div class="container">
+			<div class="row">
+				<!-- Profile -->
+				<div class="col-4 col-5-large col-12-medium">
+					<span class="image fit"><img
+							src="https://media.licdn.com/dms/image/v2/D4D03AQGJqNTd7dswMw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1697176966145?e=1742428800&v=beta&t=idMDszLMxBCvDsgv8hib1FLyLUL1tX0V1p-lgkmF8H0"
+							alt="profile" /></span>
+					<div class="icons">
+						<ul class="social">
+							<li><a href="https://www.linkedin.com/in/sushantmohite/"
+									class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:mohite.sushant76@gmail.com" class="icon solid fa-envelope"><span
+										class="label">Email</span></a></li>
+							<li><a href="https://drive.google.com/file/d/1Dag2THvhRjlcnbRfh0nE78KzElj3GKcx/view?usp=drive_link"
+									class="icon solid fa-address-card"><span class="label">Resume</span></a></li>
+						</ul>
 					</div>
 				</div>
+				<!-- Info -->
+				<div class="col-8 col-7-large col-12-medium">
+					<header>
+						<h2>Sushant Mohite</h2>
+					</header>
+					<p>I am a gameplay programmer and a unity developer. Passionate about gaming and programming. My
+						primary focus is on creating immersive and engaging gaming experiences using the Unity Game
+						Engine and the C# programming language. With my skills and dedication, I aim to bring unique and
+						exciting projects to life.</p>
+					<!-- <hr /> -->
+					<p><b><span style="color: #4684ab">Location: </span></b>Mumbai, India</p>
+					<!-- <hr /> -->
+					<!-- <p><b><span style="color: #457b9d">Work: </span></b>Unity Game Developer / Open to Work</p> -->
+				</div>
 			</div>
-		</article>
-		
-<!-- Projects -->
-<article id="portfolio" class="wrapper style2">
-    <div class="container">
-        <header>
-            <h1>Projects</h1>
-            <!-- <p>Apps, games and simulators that I developed or worked on.</p> -->
-        </header>
-        <div class="row aln-center">
-            
-			<!-- Mario Run -->
-            <div class="col-4 col-6 col-12-small">
-                <section class="box style1 justkrated">
-                    <h3><span style="color: #ffffff"></span>Mario Run</h3>
-                    <p>A 3D platformer game inspired by classic platformer games. Player navigate a challenging environment filled with obstacles, traps, and collectibles, aiming to complete the level in the fastest time possible.</p>
-					<!-- Video with link to mariorun.html -->
-                    <a href="mariorun.html" class="image featured">
-                        <video autoplay loop muted playsinline class="responsive-video" preload="metadata" poster="images/mariorun1.jpeg">
-                            <source data-src="videos/mariorun.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    <!-- Button linking to mariorun.html -->
-                    <a href="mariorun.html" class="button large scrolly">View details</a>
-                </section>
-            </div>
+		</div>
+	</article>
 
-			
-			<!-- Galaxy Strike -->
-            <div class="col-4 col-6 col-12-small">
-                <section class="box style1 justkrated">
-                    <h3><span style="color: #ffffff"></span>Galaxy Strike</h3>
-                    <p>Galaxy Strike is a thrilling 3D space shooter game where, to protect the galaxy, player has to navigate through enemy territories, destroy hostile enemy ships, dodge obstacles and reach to a safe place.</p>
-                    <!-- Video with link to mariorun.html -->
-                    <a href="galaxystrike.html" class="image featured">
-                        <video autoplay loop muted playsinline class="responsive-video" preload="metadata">
-                            <source data-src="videos/galaxystrike.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </a>
-                    <!-- Button linking to mariorun.html -->
-                    <a href="galaxystrike.html" class="button large scrolly">View details</a>
-                </section>
-            </div>
+	<!-- Projects -->
+	<article id="portfolio" class="wrapper style2">
+		<div class="container">
+			<header>
+				<h1>Projects</h1>
+				<!-- <p>Apps, games and simulators that I developed or worked on.</p> -->
+			</header>
+			<div class="row aln-center">
 
-            
-			<!-- Kingdom Rush -->
-			<div class="col-4 col-6 col-12-small">
-                <section class="box style1 justkrated">
-                    <h3><span style="color: #ffffff"></span>Kingdom Rush</h3>
-                    <p>Kingdom Rush is a 3D tower defense game where enemies attempt to reach the kingdom to loot gold. Players must strategically place towers to stop them before they escape with the treasure.
+				<!-- Mario Run -->
+				<div class="col-4 col-6 col-12-small">
+					<section class="box style1 justkrated">
+						<h3><span style="color: #ffffff"></span>Mario Run</h3>
+						<p>A 3D platformer game inspired by classic platformer games. Player navigate a challenging
+							environment filled with obstacles, traps, and collectibles, aiming to complete the level in
+							the fastest time possible.</p>
+						<!-- Video with link to mariorun.html -->
+						<a href="mariorun.html" class="image featured">
+							<video autoplay loop muted playsinline class="responsive-video" preload="metadata"
+								poster="images/mariorun1.jpeg">
+								<source data-src="videos/mariorun.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							<!-- Button linking to mariorun.html -->
+							<a href="mariorun.html" class="button large scrolly">View details</a>
+					</section>
+				</div>
 
-					</p>
-                    <!-- Video with link to mariorun.html -->
-                    <a href="kingdomrush.html" class="image featured">
-                        <video autoplay loop muted playsinline class="responsive-video" preload="metadata">
-                            <source data-src="videos/kingdomrush.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </a>
-                    <!-- Button linking to mariorun.html -->
-                    <a href="kingdomrush.html" class="button large scrolly">View details</a>
-                </section>
-            </div>
 
-            
-			<!-- Rocket Boost -->
-			<div class="col-4 col-6 col-12-small">
-                <section class="box style1 justkrated">
-                    <h3><span style="color: #ffffff"></span>Rocket Boost</h3>
-                    <p>Rocket Boost is a physics-based 2.5D game where players control a rocket by managing its thrust and rotation. The objective is to navigate through challenging obstacles and land on landing pad.</p>
-                    <!-- Video with link to mariorun.html -->
-                    <a href="rocketboost.html" class="image featured">
-                        <video autoplay loop muted playsinline class="responsive-video" preload="metadata">
-                            <source data-src="videos/rocketboost.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </a>
-                    <!-- Button linking to mariorun.html -->
-                    <a href="rocketboost.html" class="button large scrolly">View details</a>
-                </section>
-            </div>
+				<!-- Galaxy Strike -->
+				<div class="col-4 col-6 col-12-small">
+					<section class="box style1 justkrated">
+						<h3><span style="color: #ffffff"></span>Galaxy Strike</h3>
+						<p>Galaxy Strike is a thrilling 3D space shooter game where, to protect the galaxy, player has
+							to navigate through enemy territories, destroy hostile enemy ships, dodge obstacles and
+							reach to a safe place.</p>
+						<!-- Video with link to mariorun.html -->
+						<a href="galaxystrike.html" class="image featured">
+							<video autoplay loop muted playsinline class="responsive-video" preload="metadata">
+								<source data-src="videos/galaxystrike.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</a>
+						<!-- Button linking to mariorun.html -->
+						<a href="galaxystrike.html" class="button large scrolly">View details</a>
+					</section>
+				</div>
 
-        </div>
-    </div>
-</article>
-				
-			<!-- <footer>
+
+				<!-- Kingdom Rush -->
+				<div class="col-4 col-6 col-12-small">
+					<section class="box style1 justkrated">
+						<h3><span style="color: #ffffff"></span>Kingdom Rush</h3>
+						<p>Kingdom Rush is a 3D tower defense game where enemies attempt to reach the kingdom to loot
+							gold. Players must strategically place towers to stop them before they escape with the
+							treasure.
+
+						</p>
+						<!-- Video with link to mariorun.html -->
+						<a href="kingdomrush.html" class="image featured">
+							<video autoplay loop muted playsinline class="responsive-video" preload="metadata">
+								<source data-src="videos/kingdomrush.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</a>
+						<!-- Button linking to mariorun.html -->
+						<a href="kingdomrush.html" class="button large scrolly">View details</a>
+					</section>
+				</div>
+
+
+				<!-- Rocket Boost -->
+				<div class="col-4 col-6 col-12-small">
+					<section class="box style1 justkrated">
+						<h3><span style="color: #ffffff"></span>Rocket Boost</h3>
+						<p>Rocket Boost is a physics-based 2.5D game where players control a rocket by managing its
+							thrust and rotation. The objective is to navigate through challenging obstacles and land on
+							landing pad.</p>
+						<!-- Video with link to mariorun.html -->
+						<a href="rocketboost.html" class="image featured">
+							<video autoplay loop muted playsinline class="responsive-video" preload="metadata">
+								<source data-src="videos/rocketboost.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</a>
+						<!-- Button linking to mariorun.html -->
+						<a href="rocketboost.html" class="button large scrolly">View details</a>
+					</section>
+				</div>
+
+			</div>
+		</div>
+	</article>
+
+	<!-- <footer>
 			    <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 				<a href="#portfolio" class="button large scrolly">See other Projects</a>
 			</footer> -->
-				
-		
-		<!-- Contact -->
-		<article id="contact" class="wrapper style1">
-			<div class="container medium">
-				<header>
-					<h1>Email Me</h1>
-				</header>
-				<div class="row">
-					<div class="col-12">
-						<form method="post" action="mailto:mohite.sushant76@gmail.com">
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<input type="text" name="name" id="name" placeholder="Name" />
-								</div>
-								<div class="col-6 col-12-small">
-									<input type="text" name="email" id="email" placeholder="Email" />
-								</div>
-								<div class="col-12">
-									<input type="text" name="subject" id="subject" placeholder="Subject" />
-								</div>
-								<div class="col-12">
-									<textarea name="message" id="message" placeholder="Message"></textarea>
-								</div>
-								<div class="col-12">
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" /></li>
-										<li><input type="reset" value="Clear Form" class="alt" /></li>
-									</ul>
-								</div>
+
+
+	<!-- Contact -->
+	<article id="contact" class="wrapper style1">
+		<div class="container medium">
+			<header>
+				<h1>Email Me</h1>
+			</header>
+			<div class="row">
+				<div class="col-12">
+					<form method="post" action="mailto:mohite.sushant76@gmail.com">
+						<div class="row">
+							<div class="col-6 col-12-small">
+								<input type="text" name="name" id="name" placeholder="Name" />
 							</div>
-						</form>
-					</div>
-					<div class="col-12">
-						<hr />
-						<h3>Connect with me</h3>
-						<ul class="social">
-							<li><a href="https://www.linkedin.com/in/sushantmohite/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:mohite.sushant76@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							<li><a href="https://drive.google.com/file/d/1Dag2THvhRjlcnbRfh0nE78KzElj3GKcx/view?usp=drive_link" class="icon solid fa-address-card"><span class="label">Resume</span></a></li>
-						</ul>
-						<hr />
-						<a href="" class="button large scrolly">Download Resume</a>
-					</div>
+							<div class="col-6 col-12-small">
+								<input type="text" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<input type="text" name="subject" id="subject" placeholder="Subject" />
+							</div>
+							<div class="col-12">
+								<textarea name="message" id="message" placeholder="Message"></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="reset" value="Clear Form" class="alt" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
 				</div>
-				<footer>
-					<!-- <hr /> -->
-					<!-- <ul id="copyright">
+				<div class="col-12">
+					<hr />
+					<h3>Connect with me</h3>
+					<ul class="social">
+						<li><a href="https://www.linkedin.com/in/sushantmohite/"
+								class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:mohite.sushant76@gmail.com" class="icon solid fa-envelope"><span
+									class="label">Email</span></a></li>
+						<li><a href="https://drive.google.com/file/d/1Dag2THvhRjlcnbRfh0nE78KzElj3GKcx/view?usp=drive_link"
+								class="icon solid fa-address-card"><span class="label">Resume</span></a></li>
+					</ul>
+					<hr />
+					<a href="" class="button large scrolly">Download Resume</a>
+				</div>
+			</div>
+			<footer>
+				<!-- <hr /> -->
+				<!-- <ul id="copyright">
 						<li>&copy; 2025. All rights reserved.</li>
 					</ul> -->
-				</footer>
-			</div>
-		</article>
+			</footer>
+		</div>
+	</article>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
 </html>
