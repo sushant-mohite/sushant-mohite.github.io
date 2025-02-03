@@ -52,16 +52,16 @@
     fullScreenDiv.style.height = '100%';
     fullScreenDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
     fullScreenDiv.style.display = 'flex';
-    fullScreenDiv.style.alignItems = 'flex-start'; // Align items to the start (top)
-    fullScreenDiv.style.justifyContent = 'center';
+    fullScreenDiv.style.alignItems = 'center'; // Center vertically
+    fullScreenDiv.style.justifyContent = 'center'; // Center horizontally
     fullScreenDiv.style.zIndex = '1000';
 
     // Create an img element for the full-screen image
     const fullScreenImg = document.createElement('img');
     fullScreenImg.src = img.src; // Set the src of the full-screen image
     fullScreenImg.style.maxWidth = '90%'; // Responsive full-screen image
-    fullScreenImg.style.maxHeight = '90%'; // Responsive full-screen image
-    fullScreenImg.style.marginTop = '70px'; // Adjust this value for the desired gap
+    fullScreenImg.style.maxHeight = 'calc(90% - 50px)'; // Adjust height for gap below nav bar
+    fullScreenImg.style.marginTop = '50px'; // Create space between nav bar and image
 
     // Add click event to close the full-screen view
     fullScreenDiv.onclick = function() {
@@ -74,6 +74,7 @@
     fullScreenDiv.appendChild(fullScreenImg);
     document.body.appendChild(fullScreenDiv); // Append the full-screen div to the body
 }
+
 
 
 	</script>
