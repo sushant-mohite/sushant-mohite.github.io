@@ -464,6 +464,7 @@
   height: 100%; /* Make the image fill the box vertically */
   object-fit: cover; /* Ensures the image scales and maintains aspect ratio */
   display: block; /* Prevent extra space below the image */
+  cursor: pointer; /* Change cursor on hover */
 }
 
   
