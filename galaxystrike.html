@@ -40,6 +40,9 @@
 		});
 
 		function openFullScreen(img) {
+    // Disable body scrolling
+    document.body.style.overflow = 'hidden';
+
     // Create a new div for full screen
     const fullScreenDiv = document.createElement('div');
     fullScreenDiv.style.position = 'fixed';
@@ -61,6 +64,8 @@
 
     // Add click event to close the full-screen view
     fullScreenDiv.onclick = function() {
+        // Enable body scrolling
+        document.body.style.overflow = ''; // Reset to default overflow
         document.body.removeChild(fullScreenDiv); // Remove the full-screen div
     };
 
@@ -68,6 +73,7 @@
     fullScreenDiv.appendChild(fullScreenImg);
     document.body.appendChild(fullScreenDiv); // Append the full-screen div to the body
 }
+
 	</script>
 
 </head>
