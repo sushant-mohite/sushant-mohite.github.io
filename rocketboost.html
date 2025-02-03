@@ -38,6 +38,36 @@
 			window.addEventListener('resize', checkVideoVisibility);
 			checkVideoVisibility(); // Initial check when the page loads
 		});
+
+		function openFullScreen(img) {
+    // Create a new div for full screen
+    const fullScreenDiv = document.createElement('div');
+    fullScreenDiv.style.position = 'fixed';
+    fullScreenDiv.style.top = '0';
+    fullScreenDiv.style.left = '0';
+    fullScreenDiv.style.width = '100%';
+    fullScreenDiv.style.height = '100%';
+    fullScreenDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    fullScreenDiv.style.display = 'flex';
+    fullScreenDiv.style.alignItems = 'center';
+    fullScreenDiv.style.justifyContent = 'center';
+    fullScreenDiv.style.zIndex = '1000';
+
+    // Create an img element for the full-screen image
+    const fullScreenImg = document.createElement('img');
+    fullScreenImg.src = img.src; // Set the src of the full-screen image
+    fullScreenImg.style.maxWidth = '90%'; // Responsive full-screen image
+    fullScreenImg.style.maxHeight = '90%'; // Responsive full-screen image
+
+    // Add click event to close the full-screen view
+    fullScreenDiv.onclick = function() {
+        document.body.removeChild(fullScreenDiv); // Remove the full-screen div
+    };
+
+    // Append the full-screen image to the full-screen div
+    fullScreenDiv.appendChild(fullScreenImg);
+    document.body.appendChild(fullScreenDiv); // Append the full-screen div to the body
+}
 	</script>
 
 </head>
@@ -104,10 +134,10 @@
 
 						<div class="sub-section-title1">Game Images</div>
 						<div class="image-grid">
-							<div class="image-box"><img src="images/image1.png" alt="Game Image 1"></div>
-							<div class="image-box"><img src="images/image2.png" alt="Game Image 2"></div>
-							<div class="image-box"><img src="images/image3.png" alt="Game Image 1"></div>
-							<div class="image-box"><img src="images/image4.png" alt="Game Image 1"></div>
+							<div class="image-box"><img src="images/image1.png" alt="Game Image 1" onclick="openFullScreen(this)"></div>
+							<div class="image-box"><img src="images/image2.png" alt="Game Image 2" onclick="openFullScreen(this)"></div>
+							<div class="image-box"><img src="images/image3.png" alt="Game Image 1" onclick="openFullScreen(this)"></div>
+							<div class="image-box"><img src="images/image4.png" alt="Game Image 1" onclick="openFullScreen(this)"></div>
 						</div>
 					</div>
 				</div>
