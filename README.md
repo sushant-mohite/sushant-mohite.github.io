@@ -1,4 +1,5 @@
 # sushant-mohite.github.io
-⚠️ Copyright Notice  
+⚠️ Copyright (c) Notice 2025
+All Rights Reserved.
 This portfolio website is my personal project.  
-Unauthorized copying, modification or redistribution of any part of this project is prohibited.  
+Unauthorized Copying, Modification or Redistribution of any part of this project without permission is prohibited.  
