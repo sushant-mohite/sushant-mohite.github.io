@@ -40,39 +40,39 @@
 		});
 
 		function openFullScreen(img) {
-    // Disable body scrolling
-    document.body.style.overflow = 'hidden';
+			// Disable body scrolling
+			document.body.style.overflow = 'hidden';
 
-    // Create a new div for full screen
-    const fullScreenDiv = document.createElement('div');
-    fullScreenDiv.style.position = 'fixed';
-    fullScreenDiv.style.top = '0';
-    fullScreenDiv.style.left = '0';
-    fullScreenDiv.style.width = '100%';
-    fullScreenDiv.style.height = '100%';
-    fullScreenDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-    fullScreenDiv.style.display = 'flex';
-    fullScreenDiv.style.alignItems = 'center';
-    fullScreenDiv.style.justifyContent = 'center';
-    fullScreenDiv.style.zIndex = '1000';
+			// Create a new div for full screen
+			const fullScreenDiv = document.createElement('div');
+			fullScreenDiv.style.position = 'fixed';
+			fullScreenDiv.style.top = '0';
+			fullScreenDiv.style.left = '0';
+			fullScreenDiv.style.width = '100%';
+			fullScreenDiv.style.height = '100%';
+			fullScreenDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+			fullScreenDiv.style.display = 'flex';
+			fullScreenDiv.style.alignItems = 'center';
+			fullScreenDiv.style.justifyContent = 'center';
+			fullScreenDiv.style.zIndex = '1000';
 
-    // Create an img element for the full-screen image
-    const fullScreenImg = document.createElement('img');
-    fullScreenImg.src = img.src; // Set the src of the full-screen image
-    fullScreenImg.style.maxWidth = '90%'; // Responsive full-screen image
-    fullScreenImg.style.maxHeight = '90%'; // Responsive full-screen image
+			// Create an img element for the full-screen image
+			const fullScreenImg = document.createElement('img');
+			fullScreenImg.src = img.src; // Set the src of the full-screen image
+			fullScreenImg.style.maxWidth = '90%'; // Responsive full-screen image
+			fullScreenImg.style.maxHeight = '90%'; // Responsive full-screen image
 
-    // Add click event to close the full-screen view
-    fullScreenDiv.onclick = function() {
-        // Enable body scrolling
-        document.body.style.overflow = ''; // Reset to default overflow
-        document.body.removeChild(fullScreenDiv); // Remove the full-screen div
-    };
+			// Add click event to close the full-screen view
+			fullScreenDiv.onclick = function () {
+				// Enable body scrolling
+				document.body.style.overflow = ''; // Reset to default overflow
+				document.body.removeChild(fullScreenDiv); // Remove the full-screen div
+			};
 
-    // Append the full-screen image to the full-screen div
-    fullScreenDiv.appendChild(fullScreenImg);
-    document.body.appendChild(fullScreenDiv); // Append the full-screen div to the body
-}
+			// Append the full-screen image to the full-screen div
+			fullScreenDiv.appendChild(fullScreenImg);
+			document.body.appendChild(fullScreenDiv); // Append the full-screen div to the body
+		}
 
 	</script>
 
@@ -115,14 +115,16 @@
 							<ul>
 								<li> <strong>Input Handling:</strong> Controlled rocket movement using player inputs for
 									thrust and rotation.</li>
-								<li> <strong>Physics & Collision Detection:</strong> Applied force and gravity to create
-									realistic rocket movement and flight dynamics.</li>
-								<li> <strong>Particle System:</strong> Added thrust effects and explosions to enhance
+								<li> <strong>Physics & Collision Detection:</strong> Applied relative force and gravity
+									to create
+									realistic rocket movement and collision detection for crash and success.</li>
+								<li> <strong>Particle System:</strong> Added thrust effects, crash explosions and
+									success effects to enhance
 									visual feedback. </li>
-								<li> <strong>Level Design:</strong> Created challenging levels with varying obstacles
-									and landing pads to test player control.</li>
-								<li> <strong>Scene Management:</strong> Handled transitions between levels and restart
-									scenarios seamlessly.</li>
+								<li> <strong>Moving Objects:</strong> Used Mathf.PingPong() and Vector3.Lerp() to create
+									moving obstacles and interactive level elements. </li>
+								<li> <strong>Scene Management:</strong> Implemented smooth transitions between levels
+									and ensured seamless restart functionality.</li>
 								<li> <strong>Skybox & Lighting:</strong> Designed immersive visuals with a custom skybox
 									and optimized lighting. </li>
 							</ul>
@@ -133,17 +135,22 @@
 					<!-- Right Section -->
 					<div class="right-container">
 						<div class="section-title1">Gameplay Footage</div>
-						<video class="responsive-video1" preload="auto" poster="images/rocketboost.png" controls controlslist="nodownload">
+						<video class="responsive-video1" preload="auto" poster="images/rocketboost.png" controls
+							controlslist="nodownload">
 							<source src="videos/rocketboostfinal.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
 
 						<div class="sub-section-title1">Game Images</div>
 						<div class="image-grid">
-							<div class="image-box"><img src="images/rocketboost2.png" alt="Game Image 1" onclick="openFullScreen(this)"></div>
-							<div class="image-box"><img src="images/rocketboost3.png" alt="Game Image 2" onclick="openFullScreen(this)"></div>
-							<div class="image-box"><img src="images/rocketboost1.png" alt="Game Image 1" onclick="openFullScreen(this)"></div>
-							<div class="image-box"><img src="images/rocketboost4.png" alt="Game Image 1" onclick="openFullScreen(this)"></div>
+							<div class="image-box"><img src="images/rocketboost2.png" alt="Game Image 1"
+									onclick="openFullScreen(this)"></div>
+							<div class="image-box"><img src="images/rocketboost3.png" alt="Game Image 2"
+									onclick="openFullScreen(this)"></div>
+							<div class="image-box"><img src="images/rocketboost1.png" alt="Game Image 1"
+									onclick="openFullScreen(this)"></div>
+							<div class="image-box"><img src="images/rocketboost4.png" alt="Game Image 1"
+									onclick="openFullScreen(this)"></div>
 						</div>
 					</div>
 				</div>
@@ -171,11 +178,12 @@
 							class="label">LinkedIn</span></a></li>
 				<li><a href="mailto:mohite.sushant76@gmail.com" class="icon solid fa-envelope"><span
 							class="label">Email</span></a></li>
-							<li><a href="https://drive.google.com/file/d/166lr35rZzoT_URV-VlDtoaB7BlOTpAxm/view?usp=sharing"
-								class="icon solid fa-address-card"><span class="label">Resume</span></a></li>
+				<li><a href="https://drive.google.com/file/d/166lr35rZzoT_URV-VlDtoaB7BlOTpAxm/view?usp=sharing"
+						class="icon solid fa-address-card"><span class="label">Resume</span></a></li>
 			</ul>
 			<hr />
-			<a href="https://drive.google.com/uc?export=download&id=166lr35rZzoT_URV-VlDtoaB7BlOTpAxm" class="button large scrolly">Download Resume</a>
+			<a href="https://drive.google.com/uc?export=download&id=166lr35rZzoT_URV-VlDtoaB7BlOTpAxm"
+				class="button large scrolly">Download Resume</a>
 		</div>
 		</div>
 		</div>
